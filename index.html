@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="layout.css">
+  <link rel="stylesheet" href="colors.css">
+  <link rel="stylesheet" href="design.css">
+  <link rel="stylesheet" href="cadence.css">
+  <link rel="stylesheet" href="text.css">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+  <link rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+        crossorigin="anonymous">
+  <title>Modal Interchange</title>
+</head>
+
+<body>
+
+<div class="grid_supergrid">
+
+  <div class="grid_title">
+    <button id='aboutbutton'><i class="about far fa-user-circle"></i></button>
+    <button id='infobutton'><i class="info fas fa-info-circle"></i></button>
+    <button id='questionbutton'><i class="question far fa-question-circle"></i></button>
+
+    <!-- <h1>Modal Interchange Chords</h1> -->
+    <h1>
+      <span>M</span>
+      <span>O</span>
+      <span>D</span>
+      <span>A</span>
+      <span>L</span>
+      <span> </span>
+      <span>I</span>
+      <span>N</span>
+      <span>T</span>
+      <span>E</span>
+      <span>R</span>
+      <span>C</span>
+      <span>H</span>
+      <span>A</span>
+      <span>N</span>
+      <span>G</span>
+      <span>E</span>
+      <span> </span>
+      <span>C</span>
+      <span>H</span>
+      <span>O</span>
+      <span>R</span>
+      <span>D</span>
+      <span>S</span>
+
+    </h1>
+
+  </div>
+
+  <div class='grid_roman'>
+    <p class='color'>I</p>
+    <p class='color'>II</p>
+    <p class='color'>III</p>
+    <p class='color'>IV</p>
+    <p class='color'>V</p>
+    <p class='color'>VI</p>
+    <p class='color'>VII</p>
+  </div>
+
+  <div class="grid_modes">
+    <div class=''><span>C Lydian</span> <i class="fas fa-angle-right"></i> </div>
+    <div class=''><span>C Ionian</span> <i class="fas fa-angle-right"></i> </div>
+    <div class=''><span>C Mixolydian</span> <i class="fas fa-angle-right"></i> </div>
+    <div class=''><span>C Dorian</span> <i class="fas fa-angle-right"></i> </div>
+    <div class=''><span>C Aeolian</span> <i class="fas fa-angle-right"></i> </div>
+    <div class=''><span>C Phrygian</span> <i class="fas fa-angle-right"></i> </div>
+    <div class=''><span>C Locrian</span> <i class="fas fa-angle-right"></i> </div>
+  </div>
+
+  <div class="grid_chords1">
+
+    <div draggable='true' class='chords one r1 r2' id='IM7'>CMaj7</div>
+    <div draggable='true' class='chords one r3' id='I7'>C7</div>
+    <div draggable='true' class='chords one r4 r5 r6' id='im7'>Cmin7</div>
+    <div draggable='true' class='chords one r7' id='idim7'>Cm7b5</div>
+
+    <div draggable='true'class='chords two r1' id='II7'>D7</div>
+    <div draggable='true'class='chords two r2 r3 r4' id='iim7'>Dmin7</div>
+    <div draggable='true'class='chords two r5' id='iidim7'>Dm7b5</div>
+    <div draggable='true'class='chords two r6 r7' id='bIIM7'>DbMaj7</div>
+
+    <div draggable='true' class='chords three r1 r2' id='iiim7'>Emin7</div>
+    <div draggable='true' class='chords three r3' id='iiidim7'>Em7b5</div>
+    <div draggable='true' class='chords three r4 r5' id='bIIIM7'>EbMaj7</div>
+    <div draggable='true' class='chords three r6' id='bIII7'>Eb7</div>
+    <div draggable='true' class='chords three r7' id='biiim7'>Ebmin7</div>
+
+    <div draggable='true' class='chords four r1' id='sivdim7'>F#m7b5</div>
+    <div draggable='true' class='chords four r2 r3' id='IVM7'>FMaj7</div>
+    <div draggable='true' class='chords four r4' id='IV7'>F7</div>
+    <div draggable='true' class='chords four r5 r6 r7' id='ivm7'>Fmin7</div>
+
+    <div draggable='true' class='chords five r1' id='VM7'>GMaj7</div>
+    <div draggable='true' class='chords five r2' id='V7'>G7</div>
+    <div draggable='true' class='chords five r3 r4 r5' id='vm7'>Gmin7</div>
+    <div draggable='true' class='chords five r6' id='vdim7'>Gm7b5</div>
+    <div draggable='true' class='chords five r7' id='bVM7'>GbMaj7</div>
+
+    <div draggable='true' class='chords six r1 r2 r3' id='vim7'>Amin7</div>
+    <div draggable='true' class='chords six r4' id='vidim7'>Am7b5</div>
+    <div draggable='true' class='chords six r5 r6' id='bVIM7'>AbMaj7</div>
+    <div draggable='true' class='chords six r7' id='bVI7'>Ab7</div>
+
+    <div draggable='true' class='chords seven r1' id='viim7'>Bmin7</div>
+    <div draggable='true' class='chords seven r2' id='viidim7'>Bm7b5</div>
+    <div draggable='true' class='chords seven r3 r4' id='bVIIM7'>BbMaj7</div>
+    <div draggable='true' class='chords seven r5' id='bVII7'>Bb7</div>
+    <div draggable='true' class='chords seven r6 r7' id='bviim7'>Bbmin7</div>
+
+    <hr id='hr1' class='gridhr'>
+    <hr id='hr2' class='gridhr'> 
+    <hr id='hr3' class='gridhr'>
+    <hr id='hr4' class='gridhr'>
+    <hr id='hr5' class='gridhr'>
+    <hr id='hr6' class='gridhr'>
+    <hr id='hr7' class='gridhr'>
+
+  </div>
+
+  <div class="grid_chords2">
+    <div>Secondary Dominants</div>
+    <div id='secdomlist'>
+      <div draggable='true' class='chords one' id='I7sec'>C7</div>
+      <div draggable='true' class='chords two' id='II7sec'>D7</div>
+      <div draggable='true' class='chords three' id='III7sec'>E7</div>
+      <div draggable='true' class='chords six' id='VI7sec'>A7</div>
+      <div draggable='true' class='chords seven' id='VII7sec'>B7</div>
+    </div>
+    <br>
+    <br>
+    <div>Augmented Chords</div>
+    <div id='auglist'>
+      <div draggable='true' class='chords ten' id='aug1'>Caug</div>
+      <div draggable='true' class='chords ten' id='aug2'>Faug</div>
+      <div draggable='true' class='chords ten' id='aug3'>Daug</div>
+      <div draggable='true' class='chords ten' id='aug4'>Gaug</div>
+    </div>
+    <br>
+    <br>
+    <div>Diminished Chords</div>
+    <div id='dimlist'>
+      <div draggable='true' class='chords eleven' id='dim1'>C°</div>
+      <div draggable='true' class='chords eleven' id='dim2'>F°</div>
+      <div draggable='true' class='chords eleven' id='dim3'>G°</div>
+    </div>
+  </div>
+
+  <div class="grid_buttons">
+    <br>
+    <br>
+    <button id="playbutton">Play (Space)</button>
+    <button id="clearbutton">Clear (c)</button>
+    <button id='trashbutton'><i class="trash fas fa-trash"></i></button>
+    <div id='loopcontainer'>
+      <input name="loopNr" id="loopNr"
+        type='number' value='4' min='1' max='8' >
+      </input>
+      <p id='barnumber'>Number of Bars</p>
+
+    </div>
+
+  </div>
+
+  <div class="grid_buttons2">
+
+    <div id='synthie'>
+      <div id='synthmode'> </div>
+      <p class='p_inline'>Synth Mode</p>
+
+      <select name="Synth Type" id="stype">
+        <option value="s1">AMSynth</option>
+        <option value="s2">FMSynth</option>
+        <option value="s3">MembraneSynth</option>
+        <option value="s4">Synth</option>
+      </select>
+    </div>
+
+    <div id='arpie'>
+      <div id='arpmode' class=''></div>
+      <p id='arptext' class='p_inline deactivated'>Arp Mode</p>
+
+      <select name="Arpeggiator Type" id="arptype" class='deactivated'>
+        <option value="arp1">Triad Up</option>
+        <option value="arp2">Triad Down</option>
+        <option value="arp3">Triad Double Up</option>
+        <option value="arp4">Triad Double Down</option>
+        <option value="arp5">Triad Up Down</option>
+        <option value="arp6">Triad Down Up</option>
+        <option value="arp7">Seventh Up</option>
+        <option value="arp8">Seventh Down</option>
+        <option value="arp9">Seventh Double Up</option>
+        <option value="arp10">Seventh Double Down</option>
+        <option value="arp11">Seventh Up Down</option>
+        <option value="arp12">Seventh Down Up</option>
+        <option value="arp13">Seventh Various</option>
+      </select>
+    </div>
+
+    <div id='time'>
+      <p>BPM</p>
+      <input id="bpm" type="number" value="100" min="60" max="150" />
+    </div>
+
+  </div>
+
+<div class="grid_cadence">
+  <h2><u>Chords To Play</u></h2>
+  <div id='cadence'>
+    <div class="empty" id='c1'><i class="add_svg far fa-plus-square"></i></div>
+    <div class="empty" id='c2'><i class="add_svg far fa-plus-square"></i></div>
+    <div class="empty" id='c3'><i class="add_svg far fa-plus-square"></i></div>
+    <div class="empty" id='c4'><i class="add_svg far fa-plus-square"></i></div>
+    <div class="blocked" id='c5'></div>
+    <div class="blocked" id='c6'></div>
+    <div class="blocked" id='c7'></div>
+    <div class="blocked" id='c8'></div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <footer>Copyright © 2021, Taric Lallai. All Rights Reserved.</footer>
+
+</div>
+
+<div class="grid_rechtsunten">
+  <h2><u>Sequencer</u></h2>
+
+
+  <div id="restcontainer">
+    <div id="instrument">
+      <div id='chordtext'>Chord</div>
+      <div id='basstext'>Bass Note</div>
+      <div>Snare</div>
+      <div>Kick</div>
+      <div>Position</div>
+    </div>
+
+    <div id="checkboxes">
+      <div id="chordseq">
+        <div class='activated'></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div id="bassseq">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div id="snareseq">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div class='activated'></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div class='activated'></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div id="kickseq">
+        <div class='activated'></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div class='activated'></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div class='activated'></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div class='activated'></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <div id="posseq">
+        <div class="countdivs"></div>
+        <div class="countdivs"></div>
+        <div class="countdivs"></div>
+        <div class="countdivs"></div>
+        <div class="countdivs"></div>
+        <div class="countdivs"></div>
+        <div class="countdivs"></div>
+        <div class="countdivs"></div>
+        <div class="countdivs"></div>
+        <div class="countdivs"></div>
+        <div class="countdivs"></div>
+        <div class="countdivs"></div>
+        <div class="countdivs"></div>
+        <div class="countdivs"></div>
+        <div class="countdivs"></div>
+        <div class="countdivs"></div>
+      </div>
+
+    </div>
+</div>
+
+</div>
+
+<div class="grid_description">
+
+  <div id='howtoText' class='wrappertext'>
+    <h2>How to use</h2>
+    <h3>Chords can be played by clicking on any chord button in the upper section.</h3>
+    <h3>All Modal Interchange Chords of the root 'C' are displayed on the upper left site of the page,
+      while the chords on the right side are other groups of chords related to C Ionian, e.g. secondary dominants, augmented and diminished chords.</h3>
+    <h3>Drag chords on marked frames on the bottom left side of the page and create a chord progression.</h3>
+    <h3>Press 'space' to start and stop the loop. Press 'c' to remove all the chords. 
+        Drag chords from the chord progression to the trash can removes individual chords.
+    </h3>
+    <h3>The synth mode and the arpeggiator mode can be activated by clicking on the corresponding buttons. While activated, you can choose
+        between different synths and arpeggiator types.
+    </h3>
+    <h3>With the sequencer you can control the rhythm of the kick, the snare, the chord and the bass note of the chord.</h3>
+    <h3>Have Fun!</h3>
+  </div>
+
+  <div id='whatText' class='wrappertext invisible'>
+    <h2>What are Modal Interchange Chords?</h2>
+    <h3>Modal Interchange Chords, also called Borrowed Chords, are chords that are deduced from church modes with the same root as the initial key.</h3>
+    <h3>They can be used to increase the tension of chord progressions and make them more interesting.</h3>
+    <h3>E.g., you have the following common chord progression in C Ionian: CMaj7 Amin7 Fmaj7 G7. By swapping FMaj7 with AbMaj7 from Aeolian and G7 with Bb7 from Aeolian, 
+        the progression can be made more interesting.</h3>
+    <h3>Also, secondary dominants that lead to chords of the C Major scale or symmetric chords like augmented and diminished chords can be used to increase the tension of the chord progression</h3>
+  </div>
+
+  <div id='aboutText' class='wrappertext invisible'>
+    <h2>Taric Lallai made this.</h2>
+    <br>
+    <h3> Modal Interchange Chords was developed using Tone.js</h3>
+    <h3> It was created to help musicians with a fundamental understanding of music theory to visualize and explore the
+         concept of music interchange chords.</h3>
+    <h3> For comments or suggestions please contact me by e-mail: </h3>
+    <h3> Have Fun!</h3>
+
+
+
+</div>
+
+<!-- supergrid end -->
+</div>
+
+
+<script
+			  src="https://code.jquery.com/jquery-3.5.1.min.js"
+			  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+        crossorigin="anonymous">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.9/Tone.js"
+        integrity="sha512-nUjml8mN4CNYqBAy0ndDrd8pJV/eTtBNDsnvNtPqozx9/BccUeWSoKW14qWkQUnhuh8E3m+yra3qdzM68lqPEQ=="
+        crossorigin="anonymous">
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.10.2/Sortable.min.js"
+        integrity="sha512-ELgdXEUQM5x+vB2mycmnSCsiDZWQYXKwlzh9+p+Hff4f5LA+uf0w2pOp3j7UAuSAajxfEzmYZNOOLQuiotrt9Q=="
+        crossorigin="anonymous"></script>
+
+<script crossorigin src="arrays.js"></script>
+<script crossorigin src="text.js"></script>
+<script crossorigin src="chords.js"></script>
+<script crossorigin src="controls.js"></script>
+<script crossorigin src="dragandDrop.js"></script>
+<script crossorigin src="toSeq.js"></script>
+<script crossorigin src="sequencer grid.js"></script>
+<script crossorigin src="newtime.js"></script>
+<script crossorigin src="master.js"></script>
+<script crossorigin src="repeat.js"></script>
+
+
+
+</body>
+
+</html>

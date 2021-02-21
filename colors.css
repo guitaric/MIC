@@ -1,0 +1,80 @@
+/* variables for colors */
+:root {
+    --colOne: #ff5c5c;
+    --colTwo: #ffb361;
+    --colThree: #fff271;
+    --colFour: #9aff6c;
+    --colFive: #7ed6ff;
+    --colSix: #4864fd;
+    --colSeven: #a45eff;
+    --colTen: silver;
+    --colEleven: goldenrod;
+
+    --colBack: rgb(58, 58, 58);
+  }
+
+/* color the header */
+.grid_title>h1>span:nth-child(1) { text-shadow: 4px 4px var(--colOne); }
+.grid_title>h1>span:nth-child(2) { text-shadow: 4px 4px var(--colTwo); }
+.grid_title>h1>span:nth-child(3) { text-shadow: 4px 4px var(--colThree); }
+.grid_title>h1>span:nth-child(4) { text-shadow: 4px 4px var(--colFour); }
+.grid_title>h1>span:nth-child(5) { text-shadow: 4px 4px var(--colFive); }
+
+.grid_title>h1>span:nth-child(7) { text-shadow: 4px 4px var(--colSix); }
+.grid_title>h1>span:nth-child(8) { text-shadow: 4px 4px var(--colSeven); }
+.grid_title>h1>span:nth-child(9) { text-shadow: 4px 4px var(--colOne); }
+.grid_title>h1>span:nth-child(10) { text-shadow: 4px 4px var(--colTwo); }
+.grid_title>h1>span:nth-child(11) { text-shadow: 4px 4px var(--colThree); }
+.grid_title>h1>span:nth-child(12) { text-shadow: 4px 4px var(--colFour); }
+.grid_title>h1>span:nth-child(13) { text-shadow: 4px 4px var(--colFive); }
+.grid_title>h1>span:nth-child(14) { text-shadow: 4px 4px var(--colSix); }
+.grid_title>h1>span:nth-child(15) { text-shadow: 4px 4px var(--colSeven); }
+.grid_title>h1>span:nth-child(16) { text-shadow: 4px 4px var(--colOne); }
+.grid_title>h1>span:nth-child(17) { text-shadow: 4px 4px var(--colTwo); }
+
+.grid_title>h1>span:nth-child(19) { text-shadow: 4px 4px var(--colThree); }
+.grid_title>h1>span:nth-child(20) { text-shadow: 4px 4px var(--colFour); }
+.grid_title>h1>span:nth-child(21) { text-shadow: 4px 4px var(--colFive); }
+.grid_title>h1>span:nth-child(22) { text-shadow: 4px 4px var(--colSix); }
+.grid_title>h1>span:nth-child(23) { text-shadow: 4px 4px var(--colSeven); }
+.grid_title>h1>span:nth-child(24) { text-shadow: 4px 4px var(--colOne); }
+
+.grid_roman>p:nth-child(1).color { background-color: var(--colOne)}
+.grid_roman>p:nth-child(2).color { background-color: var(--colTwo)}
+.grid_roman>p:nth-child(3).color { background-color: var(--colThree)}
+.grid_roman>p:nth-child(4).color { background-color: var(--colFour)}
+.grid_roman>p:nth-child(5).color { background-color: var(--colFive)}
+.grid_roman>p:nth-child(6).color { background-color: var(--colSix)}
+.grid_roman>p:nth-child(7).color { background-color: var(--colSeven)}
+
+
+/* color the chords */
+.one:hover { background-color: var(--colOne); }
+.two:hover { background-color: var(--colTwo); }
+.three:hover { background-color: var(--colThree); }
+.four:hover { background-color: var(--colFour); }
+.five:hover { background-color: var(--colFive); }
+.six:hover { background-color: var(--colSix); }
+.seven:hover { background-color: var(--colSeven); }
+.ten:hover {
+    background-color: var(--colTen);
+    color:black;
+}
+.eleven:hover {
+    background-color: var(--colEleven);
+    color: black;
+}
+
+
+/* color the cadence */
+.one.color { color: black; background-color: var(--colOne); }
+.two.color { color: black; background-color: var(--colTwo); }
+.three.color { color: black; background-color: var(--colThree); }
+.four.color { color: black;background-color: var(--colFour); }
+.five.color { color: black; background-color: var(--colFive); }
+.six.color { color: black; background-color: var(--colSix); }
+.seven.color { color: black; background-color: var(--colSeven); }
+.ten.color { color: black; background-color: var(--colTen);}
+.eleven.color { color: black; background-color: var(--colEleven);}
+
+.color { color:black; }

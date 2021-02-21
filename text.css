@@ -1,0 +1,47 @@
+.wrappertext { 
+    margin: 0; 
+    padding: 0;
+}
+
+.invisible { display:none; }
+
+
+/* about, info and question button */
+i {
+    transform: scale(1.5);
+    margin: 0;
+    padding: 0;
+}
+
+.grid_title > button {
+    background-color: white;
+    z-index: 3;
+}
+
+#aboutbutton, #infobutton, #questionbutton {
+    position: fixed;
+    place-items: center;
+    top: 50px;
+}
+
+#aboutbutton { right: 50px; }
+#questionbutton { right: 120px; }
+#infobutton { right: 190px; }
+
+
+
+.question, .info, .about {
+    transform: scale(2.5);
+    color: var(--colBack);
+    margin: 5px;
+}
+
+
+#infobutton:hover, #questionbutton:hover, #aboutbutton:hover {
+    transform: scale(1.3);
+    transition-duration: 100ms;
+}
+
+#infobutton:hover { background-color: var(--colOne); }
+#questionbutton:hover { background-color: var(--colThree); }
+#aboutbutton:hover { background-color: var(--colSix);} 

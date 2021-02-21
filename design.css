@@ -1,0 +1,153 @@
+
+/* lines */
+.grid_modes > div {
+    position: relative;
+}
+
+.fa-angle-right {
+    position: absolute;
+    width: 25%;
+    top: 18px;
+    right: -50px;
+    background-color: white;
+}
+
+.grid_roman > p {
+    font-size: 26px;
+    font-weight: bold;
+    border: 5px solid var(--colBack);
+    border-radius: 7px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+
+
+.grid_chords1 {
+    position: relative;
+}
+
+
+hr {
+    position: absolute;
+    color: var(--colBack);
+    border-top: 6px solid var(--colBack);
+    border-bottom: 6px solid var(--colBack);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 0;
+    z-index: 1; 
+}
+
+
+hr.gridhr {
+    left: 25px;
+
+    margin: auto;
+    width: 95%;
+}
+
+#hr1 { top: 8% ;}
+#hr2 { top: 21.5%; }
+#hr3 { top: 35%; }
+#hr4 { top: 48.5%; }
+#hr5 { top: 63%; }
+#hr6 { top: 77%; }
+#hr7 { top: 90.5%; }
+
+
+.grid_buttons {   
+    background-color: white;
+}
+
+.grid_buttons > button {
+    margin: 13px;
+    background-color: white;  
+    transform: scale(1.2);
+}
+
+.grid_buttons > button:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+    transform: scale(1.4);
+    transition-duration: 100ms;
+}
+
+#loopcontainer {
+    padding: 0;
+    margin: 0;
+
+    display: inline-block;
+    position: relative;
+}
+
+#barnumber {
+    position: absolute;
+    top: -45px;
+    left: 0;
+}
+
+input, button, select {
+    border-radius: 5px;
+    /* margin: 10px; */
+
+    box-sizing: border-box;
+    appearance: none;
+    -webkit-appearance: none;
+    border: 4px solid var(--colBack);
+}
+
+select {
+    background: transparent;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 5px;
+}
+
+
+#playbutton {
+    width: 130px;
+}
+
+.trash {
+    color: var(--colBack);
+}
+
+#trashbutton {
+    transform: scaleX(1.2);
+}
+
+#trashbutton.active {
+    animation: shake .6s ease-in;    
+}
+
+#loopNr {
+    width: 150px;
+}
+
+#bpm {
+    width: 150px;
+}
+
+@keyframes shake{
+    0%{
+        transform: translate(0);
+    }
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: translate(.2em); 
+    }
+    10%, 
+    30%, 
+    50% {
+        transform: translate(-.05em);
+    }
+    70%,
+    100% {
+        transform: translate(0)
+    }
+}
+
+
