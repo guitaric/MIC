@@ -1,8 +1,8 @@
-var leftChordParentNode = document.querySelector('.grid_chords1');
-var rightChordParentNode = document.querySelector('.grid_chords2');
+let leftChordParentNode = document.querySelector('.grid_chords1');
+let rightChordParentNode = document.querySelector('.grid_chords2');
 
-var cadenceParentNode = document.querySelector('#cadence');
-var trashcan = document.querySelector('#trashbutton');
+let cadenceParentNode = document.querySelector('#cadence');
+let trashcan = document.querySelector('#trashbutton');
 
 
 //Drag and Drop EventListeners 

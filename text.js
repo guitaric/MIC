@@ -1,10 +1,10 @@
-var gridTitle = document.querySelector('.grid_title');
-var displayedText = document.querySelector('.grid_description');
-var questionIcon = document.querySelector('#questionbutton');
-var InfoIcon = document.querySelector('#infobutton');
-var howtoText = document.querySelector('#howtoText');
-var whatText = document.querySelector('#whatText');
-var aboutText = document.querySelector('#aboutText')
+let gridTitle = document.querySelector('.grid_title');
+let displayedText = document.querySelector('.grid_description');
+let questionIcon = document.querySelector('#questionbutton');
+let InfoIcon = document.querySelector('#infobutton');
+let howtoText = document.querySelector('#howtoText');
+let whatText = document.querySelector('#whatText');
+let aboutText = document.querySelector('#aboutText')
 
 
 

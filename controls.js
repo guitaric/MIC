@@ -1,11 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-
-
 //---------------------Controls
 
 document.addEventListener('keydown', controls);
-let began = false;
 
 function controls(e) {
 
@@ -22,7 +19,7 @@ function controls(e) {
 
 
 //play and pause button
-var playNpause = document.getElementById("playbutton");
+let playNpause = document.getElementById("playbutton");
 playNpause.addEventListener('click', playpause);
 let play = false;
 
@@ -41,7 +38,7 @@ function playpause(e) {
 }
 
 //clearing cadence
-var clearing = document.getElementById("clearbutton");
+let clearing = document.getElementById("clearbutton");
 clearing.addEventListener('click', clear);
 
 
@@ -53,7 +50,7 @@ function clear() {
     allChordsList2.forEach(item => item.classList.remove('color'));
 
 
-    var loopvar = document.getElementById("loopNr").value;
+    let loopvar = document.getElementById("loopNr").value;
 
     play = false;
     Tone.Transport.stop();
@@ -61,7 +58,7 @@ function clear() {
     position = 0;
     pace = 0;
 
-    var loopArray = Array.from(cadenceParentNode.children);
+    let loopArray = Array.from(cadenceParentNode.children);
     for(let i=0; i < cadenceParentNode.children.length; i++) {
         loopArray[i].id = 'c' + `${i+1}`;
         loopArray[i].className = '';
@@ -83,7 +80,7 @@ function clear() {
 loopNr.addEventListener('change', calcFrames);
 
 function calcFrames() {
-    var loopvar = document.getElementById("loopNr").value;
+    let loopvar = document.getElementById("loopNr").value;
 
     if(loopvar <= position) {
         play = false;
@@ -93,7 +90,7 @@ function calcFrames() {
         pace = 0;
     }
 
-    var loopArray = Array.from(cadenceParentNode.children);
+    let loopArray = Array.from(cadenceParentNode.children);
     for(let i=0; i < cadenceParentNode.children.length; i++) {
         if(i<loopvar) {
             if(!loopArray[i].classList.contains('chords')){

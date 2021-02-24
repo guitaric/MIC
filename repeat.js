@@ -26,27 +26,27 @@ function decolorLi(li) {
 }
 
 
-var allStages = document.querySelectorAll('.grid_roman>p');
+let allRomans = document.querySelectorAll('.grid_roman>p');
 
 function colorStages(input) {
-    var number = input.classList[1];
-    allStages.forEach(item => item.classList.remove('color'))
+    let number = input.classList[1];
+    allRomans.forEach(item => item.classList.remove('color'))
 
     switch(number) {
-        case "one": allStages[0].classList.add('color'); break;
-        case "two": allStages[1].classList.add('color'); break;
-        case "three": allStages[2].classList.add('color'); break;
-        case "four": allStages[3].classList.add('color'); break;
-        case "five": allStages[4].classList.add('color'); break;
-        case "six": allStages[5].classList.add('color'); break;
-        case "seven": allStages[6].classList.add('color'); break;
+        case "one": allRomans[0].classList.add('color'); break;
+        case "two": allRomans[1].classList.add('color'); break;
+        case "three": allRomans[2].classList.add('color'); break;
+        case "four": allRomans[3].classList.add('color'); break;
+        case "five": allRomans[4].classList.add('color'); break;
+        case "six": allRomans[5].classList.add('color'); break;
+        case "seven": allRomans[6].classList.add('color'); break;
     }
 }
 
-var modeList = document.querySelectorAll('.grid_modes>div');
+let modeList = document.querySelectorAll('.grid_modes>div');
 
 function colorModes(input) {
-    var classesArray = Array.from(input.classList);
+    let classesArray = Array.from(input.classList);
 
     if(classesArray.some(item => item == "r1")) modeList[0].classList.add('color');
     if(classesArray.some(item => item == "r2")) modeList[1].classList.add('color');
@@ -58,8 +58,8 @@ function colorModes(input) {
 
 }
 
-var allChordsList = Array.from(document.querySelectorAll('.grid_chords1>div'));
-var allChordsList2 = Array.from(document.querySelectorAll('.grid_chords2>div>div'));
+let allChordsList = Array.from(document.querySelectorAll('.grid_chords1>div'));
+let allChordsList2 = Array.from(document.querySelectorAll('.grid_chords2>div>div'));
 
 
 function colorChords(input) {
@@ -77,12 +77,8 @@ function colorChords(input) {
             .find(item => item.textContent == chordName)
             .classList.add('color');
     }
-
-
-          
+        
 }
-
-
 
 
 function sequencer(chordName, time) {
@@ -96,8 +92,8 @@ function sequencer(chordName, time) {
 
         if(chordName == "F#m7b5") chordName = "Fsm7b5";
         if(chordName != '') {
-            var c = synthmode.classList.contains('activated');
-             if(c) synth.triggerAttackRelease(eval(chordName)[0], '8n', time) ;
+            let containsActivated = synthmode.classList.contains('activated');
+             if(containsActivated) synth.triggerAttackRelease(eval(chordName)[0], '8n', time) ;
             else  sampler.triggerAttackRelease(eval(chordName)[0], '8n', time);
         }
     }
@@ -116,7 +112,7 @@ function pacemaker(){
 
 //gets triggered every beat-----------------------------------------------------
 function repeat(time) {
-    var liCount = document.querySelectorAll("#cadence > div.chords, #cadence > div.empty").length; //number of chords
+    let liCount = document.querySelectorAll("#cadence > div.chords, #cadence > div.empty").length; //number of chords
     goon(liCount); //for coloring
     let input = row.querySelector(`div:nth-child(${position + 1})`); //storing specific div
     let chordName = input.textContent;
@@ -132,7 +128,7 @@ function repeat(time) {
 
 
     if(arpmode.classList.contains('activated')) {
-        var rootNr = findRoot(chordName);
+        let rootNr = findRoot(chordName);
 
         let selArpType = arpTypeId.options[arpTypeId.selectedIndex].text;
         

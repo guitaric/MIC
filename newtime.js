@@ -1,7 +1,7 @@
 const plays = 16;
-var pace = 0;
-var position = 0;
-var chordLen = document.querySelectorAll("#cadence li").length;
+let pace = 0;
+let position = 0;
+let chordLen = document.querySelectorAll("#cadence li").length;
 
 function updateStep() {
   step = stepId.value;
@@ -82,18 +82,18 @@ function playBass(root, synth, time) {
 
 
 //play the chord that is in cadence
-var synthmode = document.querySelector('#synthmode');
-var arptext = document.querySelector('#arptext');
-var arpmode = document.querySelector('#arpmode');
-var arptype = document.querySelector('#arptype');
-var chordtext = document.querySelector('#chordtext');
-var basstext = document.querySelector('#basstext');
+let synthmode = document.querySelector('#synthmode');
+let arptext = document.querySelector('#arptext');
+let arpmode = document.querySelector('#arpmode');
+let arptype = document.querySelector('#arptype');
+let chordtext = document.querySelector('#chordtext');
+let basstext = document.querySelector('#basstext');
 
 
 
 
 synthmode.addEventListener('click', (e) => {
-    var allClasses = e.target.classList;
+    let allClasses = e.target.classList;
 
     if(allClasses.contains('activated')) {
         allClasses.remove('activated');
@@ -114,7 +114,7 @@ synthmode.addEventListener('click', (e) => {
 //play with the arpeggiator
     
 arpmode.addEventListener('click', (e) => {
-    var allClasses = e.target.classList;
+    let allClasses = e.target.classList;
 
     if(synthmode.classList.contains('activated')){
       if(allClasses.contains('activated')) {
@@ -138,10 +138,10 @@ function playPiano(chordName) {
   if(chordName == "F°") chordName = "Fdim";
   if(chordName == "G°") chordName = "Gdim";
 
-  var c = synthmode.classList.contains('activated');
+  let containsActivated = synthmode.classList.contains('activated');
   if(chordName != '') {
-    if(c) synth.triggerAttackRelease(eval(chordName), '4n') ;
-    else if(c == false) sampler.triggerAttackRelease(eval(chordName), '4n');
+    if(containsActivated) synth.triggerAttackRelease(eval(chordName), '4n') ;
+    else if(containsActivated == false) sampler.triggerAttackRelease(eval(chordName), '4n');
   }
 
 }
@@ -153,8 +153,8 @@ function goon(count) {
       position++;
 
       //decolor previous element
-      var prev = row.querySelector(`div:nth-child(${position})`);
-      decolorLi(prev);
+      let previous = row.querySelector(`div:nth-child(${position})`);
+      decolorLi(previous);
 
       modeList.forEach(item => item.classList.remove('color'));
 

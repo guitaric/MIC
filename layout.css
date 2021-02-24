@@ -10,7 +10,6 @@
     "modes chords1 chords1 chords2"
     "buttons buttons buttons2 description"
     "cadence cadence rechtsunten description"
-
 }
 
 .grid_title { 
@@ -23,7 +22,6 @@
     flex-direction: row;
     justify-content: space-around;
 }
-
 
 
 .grid_modes {   
@@ -87,7 +85,6 @@
     grid-area: buttons;
 
 }
-
 
 
 

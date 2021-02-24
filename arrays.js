@@ -9,13 +9,7 @@ const stream =
 
 const sampler = new Tone.Sampler({
 	urls: {
-		// "C4": "C4.mp3",
-		// "D#4": "Ds4.mp3",
-		// "F#4": "Fs4.mp3",
-    // "G#4": "Gs4.mp3",
 		"A4": "A4.mp3"
-    // "C5": "C5.mp3"
-
 	},
 	release: 1,
 	baseUrl: "https://tonejs.github.io/audio/salamander/",
@@ -41,10 +35,7 @@ const arpie3 = {
     downup: [3, 2, 1, 0, 1, 2],
     various: [0, 1, 2, 1, 3, 1, 2, 1]
   }
-  
-  const pianonote = [, , 0, , , 0, , , 0, , , 0, , 0, , , ];
-  
-  const bassnote =  [0, , , , 0, , , 0, , , , ,0 , , , , ];
+
   
 
 

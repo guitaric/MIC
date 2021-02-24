@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     
     //Bpm
-    var bpmvar = document.getElementById("bpm").value;
+    let bpmvar = document.getElementById("bpm").value;
     Tone.Transport.bpm.value = bpmvar;
     
     bpm.addEventListener("change", updateBPM);
