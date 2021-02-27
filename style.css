@@ -5,6 +5,11 @@
     user-select: none;
 }
 
+html, body {
+    min-width: 2210px;
+}
+
+
 select {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -15,19 +20,24 @@ select {
     font-family: 'Kodchasan', sans-serif;
 }
 
-body  {
-    padding: 0px;
+body {
+    margin: 0px;
+    padding: 0;
     border: var(--colBack) solid 5px;
     border-radius: 20px;
 }
 
-.supergrid {
-    margin: 5px;
+
+.grid_supergrid {
+
+    /* padding: 0px;
+    border-radius: 20px; */
 }
 
 .grid_title {
     border: var(--colBack) solid 5px;  
     background-color: white;
+    padding: 10px;
     font-size: 24px;
     text-align: center;
 }

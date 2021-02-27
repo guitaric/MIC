@@ -1,8 +1,8 @@
 .grid_supergrid {
     display: grid;
 
-    grid-template-columns: minmax(229px, 10%) 400px auto minmax(800px, auto);
-    grid-template-rows: 112px, 90px, auto, 135px, 380px; 
+    grid-template-columns: 230px 380px minmax(750px, 50%) minmax(830px, auto);
+    grid-template-rows: 100px, 90px, auto, 135px, 380px; 
 
     grid-template-areas: 
     "title title title title"

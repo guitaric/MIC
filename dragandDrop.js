@@ -103,9 +103,8 @@ cadenceParentNode.addEventListener('dragstart', function(e) {
         e.target.className = '';
         e.target.classList.add('empty');
         e.target.textContent = '';
+        e.target.innerHTML = '<i class="add_svg far fa-plus-square"></i>';
         e.target.removeAttribute('draggable');
-
-
 
     trashcan.removeEventListener('drop', dropOnTrashCan);
     });
