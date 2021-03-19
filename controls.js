@@ -43,6 +43,7 @@ clearing.addEventListener('click', clear);
 
 
 function clear() {
+    console.log("clear")
 
     allStages.forEach(item => item.classList.add('color'));
     modeList.forEach(item => item.classList.remove('color'));

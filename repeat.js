@@ -44,6 +44,7 @@ function colorStages(input) {
 }
 
 let modeList = document.querySelectorAll('.grid_modes>div');
+let allStages = document.querySelectorAll('.grid_roman>p');
 
 function colorModes(input) {
     let classesArray = Array.from(input.classList);
